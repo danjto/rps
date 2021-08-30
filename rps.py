@@ -31,12 +31,12 @@ while True:
     if play_player in plays:
         break
     else:
-        print(play_player + ". Invalid selection. Try again.")
+        print(f"{play_player}. Invalid selection. Try again.")
 
 
 #announce plays
-print("You play " + play_player)
-print("Computer plays " + play_comp)
+print(f"You play {play_player}")
+print(f"Computer plays {play_comp}")
 
 
 #determine winner
