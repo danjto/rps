@@ -35,13 +35,10 @@ def main():
     #determine winner
     if play_player == play_comp:
         print("It's a DRAW!")
+    elif (play_player,play_comp) in beats:
+        print(winner)
     else:
-        #if winning pair
-        if (play_player,play_comp) in beats:
-            print(winner)
-
-        else:
-            print(loser)
+        print(loser)
 
 
 while True:
