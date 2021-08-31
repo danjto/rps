@@ -2,19 +2,11 @@
 import random
 
 
-#set list of plays and winning pairs
+#set win/lose vars,list of plays and winning pairs
+winner = "You WON! Congratulations!"
+loser = "You LOST! Better luck next time!"
 plays = ["ROCK","PAPER","SCISSORS"]
 beats = [("ROCK","SCISSORS"),("PAPER","ROCK"),("SCISSORS")]
-
-
-#result functions
-#winner
-def winner():
-    print("You WON! Congratulations!")
-
-#loser
-def loser():
-    print("You LOST! Better luck next time!")
 
 
 #assign random play to computer
@@ -45,6 +37,7 @@ if play_player == play_comp:
 else:
     #computer chose rock
     if (play_player,play_comp) in beats:
-        winner()
+        print(winner)
+
     else:
-        loser()
+        print(loser)
